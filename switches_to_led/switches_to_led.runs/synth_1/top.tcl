@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z007sclg400-1
 
@@ -98,6 +99,8 @@ read_xdc G:/Xilinx_2022/Vivado/2022.1/proyek/switches_to_led/switches_to_led.src
 set_property used_in_implementation false [get_files G:/Xilinx_2022/Vivado/2022.1/proyek/switches_to_led/switches_to_led.srcs/constrs_1/new/switches_leds_constrain.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental G:/Xilinx_2022/Vivado/2022.1/proyek/switches_to_led/switches_to_led.srcs/utils_1/imports/synth_1/top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

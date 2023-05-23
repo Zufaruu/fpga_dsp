@@ -22,6 +22,7 @@
 
 module testing_qpsk();
     reg clk;
+    integer counter;
     reg [1:0] serial;
     wire [31:0] sine;
     
@@ -33,8 +34,16 @@ module testing_qpsk();
     
     initial begin
       clk = 0;
-      serial = 2'b11;
-      forever #1 clk = ~clk;  
+      counter = 0;
+      serial = 2'b10;
+      
+      forever #1 begin 
+          if(counter > 0 && counter % 2000 == 0) begin
+            serial = (serial == 4) ? 0 : serial + 1;
+          end
+          clk = ~clk;
+          counter = counter + 1; 
+      end
     end 
     
 endmodule

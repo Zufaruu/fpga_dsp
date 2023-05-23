@@ -4,6 +4,6 @@ Apr 18 2022
 16:05:34
 G:/Xilinx_2022/Vivado/2022.1/proyek/qpsk/qpsk.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
 G:/Xilinx_2022/Vivado/2022.1/proyek/qpsk/qpsk.srcs/sim_1/new/testing.v,1676551087,verilog,,,,testing,,,,,,,,
-G:/Xilinx_2022/Vivado/2022.1/proyek/qpsk/qpsk.srcs/sim_1/new/testing_qpsk.v,1677730481,verilog,,,,testing_qpsk,,,,,,,,
-G:/Xilinx_2022/Vivado/2022.1/proyek/qpsk/qpsk.srcs/sources_1/new/qpsk_tx.v,1677730238,verilog,,G:/Xilinx_2022/Vivado/2022.1/proyek/qpsk/qpsk.srcs/sim_1/new/testing_qpsk.v,,qpsk_tx,,,,,,,,
+G:/Xilinx_2022/Vivado/2022.1/proyek/qpsk/qpsk.srcs/sim_1/new/testing_qpsk.v,1680683354,verilog,,,,testing_qpsk,,,,,,,,
+G:/Xilinx_2022/Vivado/2022.1/proyek/qpsk/qpsk.srcs/sources_1/new/qpsk_tx.v,1680683616,verilog,,G:/Xilinx_2022/Vivado/2022.1/proyek/qpsk/qpsk.srcs/sim_1/new/testing_qpsk.v,,qpsk_tx,,,,,,,,
 G:/Xilinx_2022/Vivado/2022.1/proyek/qpsk/qpsk.srcs/sources_1/new/sine_gen.v,1677571777,verilog,,G:/Xilinx_2022/Vivado/2022.1/proyek/qpsk/qpsk.srcs/sim_1/new/testing.v,,sine_gen,,,,,,,,

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Fri Feb 10 15:09:26 2023
+| Date         : Fri Apr  7 10:29:02 2023
 | Host         : LAPTOP-9T9UM1TC running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation
 | Design       : top
@@ -222,18 +222,18 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        7.179ns  (logic 4.996ns (69.583%)  route 2.184ns (30.417%))
+  Data Path Delay:        8.395ns  (logic 4.238ns (50.482%)  route 4.157ns (49.518%))
   Logic Levels:           2  (IBUF=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    R17                                               0.000     0.000 r  switch (IN)
+    G19                                               0.000     0.000 r  switch (IN)
                          net (fo=0)                   0.000     0.000    switch
-    R17                  IBUF (Prop_ibuf_I_O)         1.447     1.447 r  switch_IBUF_inst/O
-                         net (fo=1, routed)           2.184     3.631    led_OBUF
-    N20                  OBUF (Prop_obuf_I_O)         3.549     7.179 r  led_OBUF_inst/O
-                         net (fo=0)                   0.000     7.179    led
-    N20                                                               r  led (OUT)
+    G19                  IBUF (Prop_ibuf_I_O)         1.328     1.328 r  switch_IBUF_inst/O
+                         net (fo=1, routed)           4.157     5.485    led_OBUF
+    T19                  OBUF (Prop_obuf_I_O)         2.910     8.395 r  led_OBUF_inst/O
+                         net (fo=0)                   0.000     8.395    led
+    T19                                                               r  led (OUT)
   -------------------------------------------------------------------    -------------------
 
 
@@ -249,18 +249,18 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        1.943ns  (logic 1.465ns (75.363%)  route 0.479ns (24.637%))
+  Data Path Delay:        2.897ns  (logic 1.579ns (54.503%)  route 1.318ns (45.497%))
   Logic Levels:           2  (IBUF=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    R17                                               0.000     0.000 r  switch (IN)
+    G19                                               0.000     0.000 r  switch (IN)
                          net (fo=0)                   0.000     0.000    switch
-    R17                  IBUF (Prop_ibuf_I_O)         0.215     0.215 r  switch_IBUF_inst/O
-                         net (fo=1, routed)           0.479     0.694    led_OBUF
-    N20                  OBUF (Prop_obuf_I_O)         1.250     1.943 r  led_OBUF_inst/O
-                         net (fo=0)                   0.000     1.943    led
-    N20                                                               r  led (OUT)
+    G19                  IBUF (Prop_ibuf_I_O)         0.405     0.405 r  switch_IBUF_inst/O
+                         net (fo=1, routed)           1.318     1.723    led_OBUF
+    T19                  OBUF (Prop_obuf_I_O)         1.174     2.897 r  led_OBUF_inst/O
+                         net (fo=0)                   0.000     2.897    led
+    T19                                                               r  led (OUT)
   -------------------------------------------------------------------    -------------------
 
 
