@@ -1,2 +1,2 @@
 # fpga_dsp
-Repository for Digital Signal Processing code in FPGA for CC-OFDM-MIMO Radar System
+Repository for learning Vivado Design Suite and do some DSP in Xilinx FPGA Board
